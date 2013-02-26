@@ -99,7 +99,8 @@ save(location.mat,file="../data/location.RData")
 train_locs <- t(sapply(train_data$LocationNormalized,getTreeFromLoc,location.mat))
 test_locs <- t(sapply(test_data$LocationNormalized,getTreeFromLoc,location.mat))
 
-save(train_locs,test_locs,file="../data/train_locs.RData")
+save(train_locs,file="../data/train_locs.RData")
+save(test_locs,file="../data/test_locs.RData")
 
 
 

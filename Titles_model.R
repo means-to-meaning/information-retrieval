@@ -143,7 +143,8 @@ salaryFromTitle1 <- matrix(unlist(lapply(test_clean.title.list1,getSalaryFromTit
 #test_salaryFromTitle <- cbind(test_data$Id,salaryFromTitle1,salaryFromTitle2,salaryFromTitle3)
 test_salaryFromTitle <- cbind(test_data$Id,salaryFromTitle1)
 
-save(train_salaryFromTitle,test_salaryFromTitle,file="../data/predictedSalaryFromTitle.RData")
+save(train_salaryFromTitle,file="../data/train_SalaryFromTitle.RData")
+save(test_salaryFromTitle,file="../data/test_SalaryFromTitle.RData")
 #TODO:
 #create a matrix for each title indicating which terms occured
 ##incidence.title.mat <- lapply(title.list,function(x) {clean.dict %in% x})
